@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spotify_black"
+    tools:context=".WaveActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wave_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Моя волна"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_mood_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Выберите настроение"
+        android:textColor="@color/spotify_light_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wave_header" />
+
+    <!-- Container for moods with background wave -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/moods_container"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_mood_prompt">
+
+        <!-- Subtle Background Wave -->
+        <LinearLayout
+            android:id="@+id/bg_wave_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:alpha="0.1"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingHorizontal="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View android:id="@+id/wave_bg_bar1" android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar2" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar3" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar4" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar5" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar6" android:layout_width="0dp" android:layout_height="60dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar7" android:layout_width="0dp" android:layout_height="45dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar8" android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar9" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar10" android:layout_width="0dp" android:layout_height="55dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar11" android:layout_width="0dp" android:layout_height="65dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar12" android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+            <View android:id="@+id/wave_bg_bar13" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1" android:background="@drawable/wave_bar_rounded" android:backgroundTint="@color/spotify_green" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_moods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_wave_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Плейлист волны"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moods_container" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_wave_tracks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/player_wrapper"
+        app:layout_constraintTop_toBottomOf="@id/tv_wave_title" />
+
+    <FrameLayout
+        android:id="@+id/player_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <include layout="@layout/layout_mini_player" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
