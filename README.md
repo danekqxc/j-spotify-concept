@@ -2,10 +2,10 @@
 
 **J-Spotify** — моя первая крупная работа в разработке Android-приложений. Приложение представляет из себя концепт стриминговой платформы, дизайн которой повзаимствован у Spotify и дополнена функциями и механиками других аудиосервисов, а также моим видением архитектуры таких приложений.
 
-[![Платформа](https://img.shields.io/badge/Android-00C853?style=flat-square&logo=android)](https://www.android.com/)
-[![Язык](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk)](https://www.oracle.com/java/)
+[![](https://img.shields.io/badge/Android-00C853?style=flat-square&logo=android&logoColor=000000)](https://www.android.com/)
+[![](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk)](https://www.oracle.com/java/)
 [![SDK](https://img.shields.io/badge/SDK-36%2B-0078D4?style=flat-square)](https://developer.android.com/)
-[![Стиль](https://img.shields.io/badge/Spotify--Style-1DB954?style=flat-square&logo=spotify)](https://spotify.com)
+[![](https://img.shields.io/badge/Spotify--Style-1DB954?style=flat-square&logo=spotify)](https://spotify.com)
 
 ---
 
@@ -66,14 +66,14 @@ Sync Logic: Видеоряд выступает в роли динамическ
 ```text
 com.example.myapplication/
 ├── core/
-│   ├── PlaybackManager.java    # Централизованная логика аудио
-│   └── MusicService.java       # Фоновый сервис и MediaSession
+│   ├── PlaybackManager.java    #  логика аудио
+│   └── MusicService.java       # фоновый сервис и MediaSession
 ├── ui/
-│   ├── FullPlayerActivity.java # Логика видео и чата
-│   ├── adapters/               # Динамическая отрисовка списков
-│   └── WaveActivity.java       # Интерфейс системы рекомендаций
+│   ├── FullPlayerActivity.java # логика видео и чата
+│   ├── adapters/               
+│   └── WaveActivity.java       # интерфейс волны
 └── data/
-    └── MusicData.java          # База данных в оперативной памяти
+    └── MusicData.java          # база данных в оперативной памяти
 ```
 ---
 <p align="center">
